@@ -2,6 +2,7 @@ use std::fs;
 
 mod day_1;
 mod day_2;
+mod day_3;
 
 fn main() {
     println!("===============================");
@@ -20,6 +21,12 @@ fn main() {
 
     println!("Day 2, Part 1: {}", day_2::solve_part_1(&day_2_input));
     println!("Day 2, Part 2: {}", day_2::solve_part_2(&day_2_input));
+    println!("-------------------------------");
+
+    let day_3_input = fs::read_to_string("inputs/day_3.txt").expect("Error reading file.");
+    let day_3_input = day_3_input.split('\n').collect();
+
+    println!("Day 3, Part 1: {}", day_3::solve_part_1(&day_3_input));
 
     println!("===============================");
 }
