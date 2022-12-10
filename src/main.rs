@@ -4,6 +4,7 @@ mod day_1;
 mod day_2;
 mod day_3;
 mod day_4;
+mod day_5;
 
 fn main() {
     println!("===============================");
@@ -36,6 +37,12 @@ fn main() {
 
     println!("Day 4, Part 1: {}", day_4::solve_part_1(&day_4_input));
     println!("Day 4, Part 2: {}", day_4::solve_part_2(&day_4_input));
+    println!("-------------------------------");
+
+    let day_5_input = fs::read_to_string("inputs/day_5.txt").expect("Error reading file.");
+    let day_5_input = day_5_input.split('\n').collect();
+
+    println!("Day 5, Part 1: {}", day_5::solve_part_1(&day_5_input));
 
     println!("===============================");
 }
