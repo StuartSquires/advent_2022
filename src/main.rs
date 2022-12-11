@@ -43,6 +43,7 @@ fn main() {
     let day_5_input = day_5_input.split('\n').collect();
 
     println!("Day 5, Part 1: {}", day_5::solve_part_1(&day_5_input));
+    println!("Day 5, Part 2: {}", day_5::solve_part_2(&day_5_input));
 
     println!("===============================");
 }
